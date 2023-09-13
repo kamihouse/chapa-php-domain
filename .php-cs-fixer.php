@@ -90,7 +90,7 @@ return $config
         // Renames PHPDoc tags.
         'general_phpdoc_tag_rename' => ['replacements' => ['inheritDocs' => 'inheritDoc']],
         // Imports or fully qualifies global classes/functions/constants.
-        'global_namespace_import' => ['import_classes' => false, 'import_constants' => false, 'import_functions' => false],
+        'global_namespace_import' => ['import_classes' => true, 'import_constants' => true, 'import_functions' => true],
         // Heredoc/nowdoc content must be properly indented. Requires PHP >= 7.3.
         'heredoc_indentation' => true,
         // Convert `heredoc` to `nowdoc` where possible.
@@ -228,7 +228,7 @@ return $config
         // All PHPUnit test classes should be marked as internal.
         'php_unit_internal_class' => true,
         // Enforce camel (or snake) case for PHPUnit test methods, following configuration.
-        'php_unit_method_casing' => true,
+        'php_unit_method_casing' => ['case' => 'snake_case'],
         // PHPDoc should contain `@param` for all params.
         'phpdoc_add_missing_param_annotation' => true,
         // All items of the given phpdoc tags must be either left-aligned or (by default) aligned vertically.
@@ -298,7 +298,7 @@ return $config
         // There MUST NOT be more than one property or constant declared per statement.
         'single_class_element_per_statement' => ['elements' => ['property']],
         // There MUST be one use keyword per declaration.
-        'single_import_per_statement' => ['group_to_single_imports' => false],
+        'single_import_per_statement' => ['group_to_single_imports' => true],
         // Each namespace use MUST go on its own line and there MUST be one blank line after the use statements block.
         'single_line_after_imports' => true,
         // Single-line comments must have proper spacing.

@@ -1,9 +1,8 @@
 parameters:
     paths:
         - src
-    excludePaths:
         - tests
-    level: 5
-    reportUnmatchedIgnoredErrors: false
-    checkGenericClassInNonGenericObjectType: false
+    level: 7
+    reportUnmatchedIgnoredErrors: true
+    checkGenericClassInNonGenericObjectType: true
     inferPrivatePropertyTypeFromConstructor: true

@@ -1,6 +1,0 @@
-{
-    "conventionalCommits.scopes": [
-        "project"
-    ],
-    "php.version": "8.2"
-}
